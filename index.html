@@ -4,7 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Commuter Log — reisdossier voor pendelende vliegers</title>
-    <meta name="description" content="Commuter Log bouwt automatisch een fiscaal bewijsdossier voor vliegend personeel dat in een ander land woont dan hun standplaats.">
+    <meta name="description" content="Commuter Log bouwt automatisch een fiscaal bewijsdossier voor vliegend personeel dat in een ander land woont dan hun standplaats: rooster, reisbewegingen, boarding passes en een jaarrapport in 6 talen.">
+    <link rel="canonical" href="https://commuterlog.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Commuter Log — reisdossier voor pendelende vliegers">
+    <meta property="og:description" content="Rooster, reisbewegingen en bewijs, automatisch bijgehouden. Jaarrapport in 6 talen, alles in je eigen iCloud.">
+    <meta property="og:url" content="https://commuterlog.app/">
+    <meta property="og:image" content="https://commuterlog.app/img/appicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +21,8 @@
         <button id="btn-nl" class="active" onclick="setLang('nl')">NL</button>
         <button id="btn-en" onclick="setLang('en')">EN</button>
     </div>
-    <h1>✈️ Commuter Log</h1>
+    <img src="img/appicon.png" alt="" width="76" height="76" style="border-radius: 17px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);">
+    <h1>Commuter Log</h1>
     <p class="tagline" data-lang="nl">Het reisdossier voor vliegers die in een ander land wonen dan hun standplaats — rooster, reisbewegingen en bewijs, automatisch bijgehouden.</p>
     <p class="tagline" data-lang="en" hidden>The travel log for pilots and cabin crew living in a different country than their base — roster, travel movements and evidence, kept automatically.</p>
     <a class="beta" href="mailto:thijsbesseling@gmail.com?subject=TestFlight%20Commuter%20Log" data-lang="nl">Meedoen met de testfase →</a>
@@ -55,6 +64,67 @@
     <div class="screens">
         <img src="img/pitch-jaar.png" alt="Jaaroverzicht met reisbewegingen">
         <img src="img/pitch-rapport.png" alt="PDF-jaarrapport met dagregister">
+    </div>
+
+    <h2 data-lang="nl">Hoe het werkt</h2>
+    <h2 data-lang="en" hidden>How it works</h2>
+    <div class="features">
+        <div class="feature">
+            <div class="dot" style="background: var(--blue);">1</div>
+            <h3 data-lang="nl">Rooster erin</h3>
+            <h3 data-lang="en" hidden>Roster in</h3>
+            <p data-lang="nl">Koppel je roosteragenda en importeer oude maandoverzichten als PDF. De app zet elke dag op zijn plek en bewaart de overzichten meteen als bewijs.</p>
+            <p data-lang="en" hidden>Link your roster calendar and import old monthly overview PDFs. The app files every day and stores the overviews as evidence.</p>
+        </div>
+        <div class="feature">
+            <div class="dot" style="background: var(--green);">2</div>
+            <h3 data-lang="nl">Passes scannen</h3>
+            <h3 data-lang="en" hidden>Scan passes</h3>
+            <p data-lang="nl">De app berekent welke reizen er in je vrije blokken horen en toont waar bewijs ontbreekt. Boarding pass scannen, bevestigen, klaar.</p>
+            <p data-lang="en" hidden>The app works out which trips belong in your free blocks and shows where evidence is missing. Scan the boarding pass, confirm, done.</p>
+        </div>
+        <div class="feature">
+            <div class="dot" style="background: var(--amber);">3</div>
+            <h3 data-lang="nl">Rapport eruit</h3>
+            <h3 data-lang="en" hidden>Report out</h3>
+            <p data-lang="nl">Eén knop maakt het jaarrapport: totalen, dagregister met verblijfsland, genummerde bijlagen en alle maandoverzichten — in de taal van je belastingdienst.</p>
+            <p data-lang="en" hidden>One tap builds the annual report: totals, a day register with country of stay, numbered attachments and all monthly overviews — in your tax authority's language.</p>
+        </div>
+    </div>
+
+    <h2 data-lang="nl">Veelgestelde vragen</h2>
+    <h2 data-lang="en" hidden>Frequently asked questions</h2>
+    <div class="faq">
+        <details>
+            <summary><span data-lang="nl">Voor wie is dit?</span><span data-lang="en" hidden>Who is this for?</span></summary>
+            <p data-lang="nl">Voor vliegend personeel dat in een ander land woont dan waar de standplaats is en voor de belasting moet aantonen welke dagen waar zijn doorgebracht — bijvoorbeeld in Spanje wonend met standplaats Amsterdam. Woonland, standplaats en thuisluchthavens zijn vrij instelbaar.</p>
+            <p data-lang="en" hidden>For flight crew living in a different country than their base who need to prove to a tax authority which days were spent where — for example living in Spain with an Amsterdam base. Home country, base and home airports are fully configurable.</p>
+        </details>
+        <details>
+            <summary><span data-lang="nl">Werkt het met mijn rooster?</span><span data-lang="en" hidden>Does it work with my roster?</span></summary>
+            <p data-lang="nl">De app leest roosteragenda's (zoals klc-rooster.nl of een rooster in je Google-agenda) en drie rooster-PDF-formaten van KLM/KLC. Ander formaat? Stuur een voorbeeld, dan wordt het toegevoegd.</p>
+            <p data-lang="en" hidden>The app reads roster calendars (such as klc-rooster.nl or a roster in your Google calendar) and three KLM/KLC roster PDF formats. Different format? Send an example and it will be added.</p>
+        </details>
+        <details>
+            <summary><span data-lang="nl">Waar staat mijn data?</span><span data-lang="en" hidden>Where is my data?</span></summary>
+            <p data-lang="nl">Op je eigen iPhone/iPad en in je eigen iCloud. Er is geen account en geen server van de app; de ontwikkelaar kan niet bij je dossier. Zie de <a href="privacy.html">privacyverklaring</a>.</p>
+            <p data-lang="en" hidden>On your own iPhone/iPad and in your own iCloud. There is no account and no app server; the developer cannot access your records. See the <a href="privacy.html">privacy statement</a>.</p>
+        </details>
+        <details>
+            <summary><span data-lang="nl">Wat kost het?</span><span data-lang="en" hidden>What does it cost?</span></summary>
+            <p data-lang="nl">Tijdens de testfase is de app gratis via TestFlight. Over een eventueel prijsmodel daarna beslissen de testers mee.</p>
+            <p data-lang="en" hidden>During the test phase the app is free through TestFlight. Any future pricing will be decided together with the testers.</p>
+        </details>
+        <details>
+            <summary><span data-lang="nl">Is er een Android-versie?</span><span data-lang="en" hidden>Is there an Android version?</span></summary>
+            <p data-lang="nl">Nee, de app is er voor iPhone en iPad. Een KLM/KLC-crew-iPad werkt prima.</p>
+            <p data-lang="en" hidden>No, the app is for iPhone and iPad. A company crew iPad works fine.</p>
+        </details>
+        <details>
+            <summary><span data-lang="nl">Is dit belastingadvies?</span><span data-lang="en" hidden>Is this tax advice?</span></summary>
+            <p data-lang="nl">Nee. Commuter Log bouwt het dossier; wat je ermee claimt bespreek je met je belastingadviseur of gestor. Zie de <a href="voorwaarden.html">voorwaarden</a>.</p>
+            <p data-lang="en" hidden>No. Commuter Log builds the records; what you claim with them is between you and your tax adviser. See the <a href="voorwaarden.html">terms</a>.</p>
+        </details>
     </div>
 
     <div class="notice">
