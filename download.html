@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download — Commuter Log</title>
+    <!--
+      QR-doelpagina: de QR-code op de site (en eventueel op prints) wijst
+      HIERHEEN. Zodra er een publieke TestFlight-link of App Store-pagina is,
+      vervangen we de inhoud door een automatische doorverwijzing — de QR
+      hoeft dan nooit opnieuw gemaakt te worden.
+      Te zijner tijd: <meta http-equiv="refresh" content="0;url=LINK"> toevoegen.
+    -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a class="brand" href="index.html">
+        <img src="img/appicon.png" alt="">
+        <span>Commuter Log</span>
+    </a>
+    <div class="lang-toggle" style="margin-left: auto;">
+        <button id="btn-nl" class="active" onclick="setLang('nl')">NL</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+</nav>
+<main class="legal" style="text-align: center;">
+    <img src="img/appicon.png" alt="" width="88" height="88" style="border-radius: 20px; margin: 0 auto 20px; box-shadow: 0 12px 30px rgba(14,27,44,0.25);">
+    <h1 data-lang="nl">Commuter Log installeren</h1>
+    <h1 data-lang="en" hidden>Install Commuter Log</h1>
+    <p data-lang="nl" style="color: var(--mute); max-width: 34em; margin: 0 auto 26px;">De app zit momenteel in een besloten testfase via TestFlight. Mail ons voor een gratis uitnodiging — je ontvangt dan een e-mail van TestFlight waarmee je de app direct installeert.</p>
+    <p data-lang="en" hidden style="color: var(--mute); max-width: 34em; margin: 0 auto 26px;">The app is currently in a closed test phase through TestFlight. E-mail us for a free invite — you will receive a TestFlight e-mail that installs the app directly.</p>
+    <a class="btn btn-primary" href="mailto:support@commuterlog.app?subject=TestFlight%20Commuter%20Log&body=Ik%20wil%20graag%20meetesten.%20Mijn%20Apple-e-mailadres%20is%3A%20">
+        <span data-lang="nl">Vraag een uitnodiging aan</span><span data-lang="en" hidden>Request an invite</span>
+    </a>
+    <p style="margin-top: 30px;"><a href="index.html" data-lang="nl">← Meer over de app</a><a href="index.html" data-lang="en" hidden>← More about the app</a></p>
+</main>
+<script src="lang.js"></script>
+</body>
+</html>

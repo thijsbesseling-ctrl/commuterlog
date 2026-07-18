@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero" style="position: relative; padding: 36px 24px;">
-    <div class="lang-toggle">
+<nav>
+    <a class="brand" href="index.html">
+        <img src="img/appicon.png" alt="">
+        <span>Commuter Log</span>
+    </a>
+    <div class="lang-toggle" style="margin-left: auto;">
         <button id="btn-nl" class="active" onclick="setLang('nl')">NL</button>
         <button id="btn-en" onclick="setLang('en')">EN</button>
     </div>
-    <h1 style="font-size: 1.5rem;">Commuter Log</h1>
-</header>
+</nav>
 <main class="legal">
-    <a class="back" href="index.html" data-lang="nl">&larr; Terug</a>
-    <a class="back" href="index.html" data-lang="en" hidden>&larr; Back</a>
+    <a class="back" href="index.html"><span data-lang="nl">&larr; Terug</span><span data-lang="en" hidden>&larr; Back</span></a>
     <div data-lang="nl">
-        <h1 style="font-size: 1.6rem; margin-bottom: 8px;">Privacyverklaring</h1>
-        <p style="color: var(--mute); font-size: 0.9rem;">Laatst bijgewerkt: 18 juli 2026</p>
+        <h1>Privacyverklaring</h1>
+        <p class="updated">Laatst bijgewerkt: 18 juli 2026</p>
         <h2>Waar je gegevens staan</h2>
 <p>Alles wat je in de app zet — rooster, reisbewegingen, gescande bewijsstukken, documenten — staat op je eigen toestel en, als synchronisatie actief is, in jouw persoonlijke iCloud. De ontwikkelaar heeft <strong>geen toegang</strong> tot je dossier. Er is geen account en geen eigen server.</p>
 <h2>Geen tracking</h2>
@@ -33,11 +35,11 @@
 <h2>Back-ups</h2>
 <p>Automatische back-ups staan in de app-map op je toestel (zichtbaar in de Bestanden-app) en blijven van jou. Back-ups die je zelf exporteert bewaar je op een plek naar keuze.</p>
 <h2>Contact</h2>
-<p>Privacyvragen of een verwijderverzoek: <a href="mailto:thijsbesseling@gmail.com">thijsbesseling@gmail.com</a></p>
+<p>Privacyvragen of een verwijderverzoek: <a href="mailto:support@commuterlog.app">support@commuterlog.app</a></p>
     </div>
     <div data-lang="en" hidden>
-        <h1 style="font-size: 1.6rem; margin-bottom: 8px;">Privacy statement</h1>
-        <p style="color: var(--mute); font-size: 0.9rem;">Last updated: 18 July 2026</p>
+        <h1>Privacy statement</h1>
+        <p class="updated">Last updated: 18 July 2026</p>
         <h2>Where your data lives</h2>
 <p>Everything you put in the app — roster, travel movements, scanned evidence, documents — lives on your own device and, when sync is on, in your personal iCloud. The developer has <strong>no access</strong> to your records. There is no account and no server.</p>
 <h2>No tracking</h2>
@@ -49,10 +51,13 @@
 <h2>Backups</h2>
 <p>Automatic backups live in the app folder on your device (visible in the Files app) and remain yours. Backups you export yourself are stored wherever you choose.</p>
 <h2>Contact</h2>
-<p>Privacy questions or deletion requests: <a href="mailto:thijsbesseling@gmail.com">thijsbesseling@gmail.com</a></p>
+<p>Privacy questions or deletion requests: <a href="mailto:support@commuterlog.app">support@commuterlog.app</a></p>
     </div>
 </main>
-<footer>© 2026 Thijs Besseling</footer>
+<footer>
+    <a href="index.html">commuterlog.app</a>
+    <div class="fineprint">© 2026 Commuter Log</div>
+</footer>
 <script src="lang.js"></script>
 </body>
 </html>
