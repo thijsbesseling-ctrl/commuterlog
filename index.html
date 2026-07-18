@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Commuter Log — reisdossier voor pendelende vliegers</title>
+    <meta name="description" content="Commuter Log bouwt automatisch een fiscaal bewijsdossier voor vliegend personeel dat in een ander land woont dan hun standplaats.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero" style="position: relative;">
+    <div class="lang-toggle">
+        <button id="btn-nl" class="active" onclick="setLang('nl')">NL</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+    <h1>✈️ Commuter Log</h1>
+    <p class="tagline" data-lang="nl">Het reisdossier voor vliegers die in een ander land wonen dan hun standplaats — rooster, reisbewegingen en bewijs, automatisch bijgehouden.</p>
+    <p class="tagline" data-lang="en" hidden>The travel log for pilots and cabin crew living in a different country than their base — roster, travel movements and evidence, kept automatically.</p>
+    <a class="beta" href="mailto:thijsbesseling@gmail.com?subject=TestFlight%20Commuter%20Log" data-lang="nl">Meedoen met de testfase →</a>
+    <a class="beta" href="mailto:thijsbesseling@gmail.com?subject=TestFlight%20Commuter%20Log" data-lang="en" hidden>Join the beta →</a>
+</header>
+
+<main>
+    <div class="features">
+        <div class="feature">
+            <div class="dot" style="background: var(--blue);">📅</div>
+            <h3 data-lang="nl">Rooster automatisch</h3>
+            <h3 data-lang="en" hidden>Roster, automatically</h3>
+            <p data-lang="nl">Leest je roosteragenda en historische rooster-PDF's — elke werkdag, layover en vrije dag op zijn plek, met terugwerkende kracht.</p>
+            <p data-lang="en" hidden>Reads your roster calendar and historical roster PDFs — every duty day, layover and day off in place, retroactively.</p>
+        </div>
+        <div class="feature">
+            <div class="dot" style="background: var(--green);">🎫</div>
+            <h3 data-lang="nl">Bewijs per reis</h3>
+            <h3 data-lang="en" hidden>Evidence per trip</h3>
+            <p data-lang="nl">De app weet welke reizen er in je vrije blokken horen en koppelt gescande boarding passes als genummerd bewijsstuk.</p>
+            <p data-lang="en" hidden>The app knows which trips belong in your free blocks and attaches scanned boarding passes as numbered evidence.</p>
+        </div>
+        <div class="feature">
+            <div class="dot" style="background: var(--amber);">📄</div>
+            <h3 data-lang="nl">Jaarrapport in 6 talen</h3>
+            <h3 data-lang="en" hidden>Annual report in 6 languages</h3>
+            <p data-lang="nl">Eén knop maakt een compleet PDF-dossier — dagregister, totalen, bijlagen en maandoverzichten — ook in het Spaans, klaar voor je gestor.</p>
+            <p data-lang="en" hidden>One tap produces a complete PDF file — day register, totals, attachments and monthly overviews — including Spanish, ready for your tax adviser.</p>
+        </div>
+        <div class="feature">
+            <div class="dot" style="background: var(--ink);">🔒</div>
+            <h3 data-lang="nl">Jouw data blijft van jou</h3>
+            <h3 data-lang="en" hidden>Your data stays yours</h3>
+            <p data-lang="nl">Alles staat op je eigen toestel en in je eigen iCloud. Geen account, geen server, geen tracking.</p>
+            <p data-lang="en" hidden>Everything lives on your own device and in your own iCloud. No account, no server, no tracking.</p>
+        </div>
+    </div>
+
+    <div class="screens">
+        <img src="img/pitch-jaar.png" alt="Jaaroverzicht met reisbewegingen">
+        <img src="img/pitch-rapport.png" alt="PDF-jaarrapport met dagregister">
+    </div>
+
+    <div class="notice">
+        <span data-lang="nl"><strong>Let op:</strong> Commuter Log is een hulpmiddel voor dossieropbouw en geeft geen belastingadvies. Raadpleeg voor je aangifte altijd een adviseur.</span>
+        <span data-lang="en" hidden><strong>Note:</strong> Commuter Log is a record-keeping tool and provides no tax advice. Always consult an adviser before filing.</span>
+    </div>
+
+    <h2 data-lang="nl">Support</h2>
+    <h2 data-lang="en" hidden>Support</h2>
+    <p data-lang="nl">Vragen, problemen of een uitnodiging voor de testfase: mail naar <a href="mailto:thijsbesseling@gmail.com">thijsbesseling@gmail.com</a> of gebruik het Feedback-tabblad in de app.</p>
+    <p data-lang="en" hidden>Questions, issues or a beta invite: e-mail <a href="mailto:thijsbesseling@gmail.com">thijsbesseling@gmail.com</a> or use the Feedback tab inside the app.</p>
+</main>
+
+<footer>
+    <a href="privacy.html" data-lang="nl">Privacyverklaring</a>
+    <a href="privacy.html" data-lang="en" hidden>Privacy statement</a>
+    <a href="voorwaarden.html" data-lang="nl">Voorwaarden &amp; disclaimer</a>
+    <a href="voorwaarden.html" data-lang="en" hidden>Terms &amp; disclaimer</a>
+    <div style="margin-top: 10px;">© 2026 Thijs Besseling</div>
+</footer>
+
+<script src="lang.js"></script>
+</body>
+</html>
